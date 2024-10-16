@@ -26,8 +26,8 @@ jobs:
       - name: Deploy to GoDaddy using FTP
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
-          server: ftp.yourdomain.com
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          server: ftp.ascoltaias.com
+          username: ${{ secrets.staging@ascoltaias.com }}
+          password: ${{ secrets.64US]n<+## }}
           local-dir: build
-          server-dir: /public_html/my-app/
+          server-dir: /public_html/other/ladies-who-lead
