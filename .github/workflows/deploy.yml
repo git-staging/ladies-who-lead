@@ -16,7 +16,7 @@ jobs:
       - name: Deploy to GoDaddy using FTP
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
-          server: ftp.ascoltaias.com  # Replace with your correct FTP server address
+          server: ascoltaias.com  # Replace with your correct FTP server address
           username: ${{ secrets.FTP_USERNAME }}  # Your FTP username stored in GitHub secrets
           password: ${{ secrets.FTP_PASSWORD }}  # Your FTP password stored in GitHub secrets
           local-dir: ./  # This should point to the root folder of your project
