@@ -14,12 +14,10 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Deploy to GoDaddy using FTP
-        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        uses: SamKirkland/FTP-Deploy-Action@4.2.0  # Update to the latest version
         with:
           server: ascoltaias.com  # Use your correct FTP server address
           username: ${{ secrets.FTP_USERNAME }}  # Your FTP username stored in GitHub secrets
           password: ${{ secrets.FTP_PASSWORD }}  # Your FTP password stored in GitHub secrets
           local-dir: ./  # This should point to the root folder of your project
           server-dir: /public_html/other/ladies-who-lead/  # Deploy to this subfolder
-          ftp-pasv: true  # Enable passive mode
-          timeout: 120  # Increase timeout to 120 seconds
