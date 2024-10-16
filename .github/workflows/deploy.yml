@@ -20,4 +20,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}  # Your FTP username stored in GitHub secrets
           password: ${{ secrets.FTP_PASSWORD }}  # Your FTP password stored in GitHub secrets
           local-dir: ./  # This should point to the root folder of your project
-          server-dir: /public_html/other/ladies-who-lead/  # Deploy to this subfolder
+          server-dir: /home/nb41zt7gue61/public_html/other/ladies-who-lead/  # Deploy to this subfolder
