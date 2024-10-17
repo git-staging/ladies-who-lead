@@ -1,5 +1,44 @@
-body{
-  background: red;
-  color:#000;
-  font-size: 40px;
+.singleEvents{
+  color:#fff;
+}
+.eventTitle{
+  font-size: 30px;
+  line-height: 1.5;
+}
+.singleEvents {
+  
+}
+.eventDate{
+  font-size: 14px;
+}
+.eventAddress{
+  font-size: 14px;
+}
+.memberCards{
+  /* overflow: hidden; */
+}
+
+.memberCardsCircle::before {
+  content: '';
+    width: calc(20px* 2);
+    height: 20px;
+    border: 1px solid #0d9488;
+    background: #fff;
+    border-bottom-left-radius: calc(20px* 2);
+    border-bottom-right-radius: calc(20px* 2);
+    border-top: none;
+    position: absolute;
+    top: -1px;
+}
+.memberCardsCircle::after {
+  content: '';
+    width: calc(20px* 2);
+    height: 20px;
+    border: 1px solid #0d9488;
+    background: #fff;
+    border-top-left-radius: calc(20px* 2);
+    border-top-right-radius: calc(20px* 2);
+    border-bottom: none;
+    position: absolute;
+    bottom: -1px;
 }
