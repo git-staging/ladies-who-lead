@@ -1,0 +1,5 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/nb41zt7gue61/public_html/other/ladies-who-lead/
+    - /bin/cp -r * $DEPLOYPATH
+    - /bin/chmod -R 755 $DEPLOYPATH
